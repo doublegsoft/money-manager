@@ -1,0 +1,319 @@
+@persistence(name='tn_mm_fammbr')
+@name(label='家庭成员', singular='family_member', plural='family_members')
+family_member<
+  
+  @persistence(name='fammbrid')
+  @name(label='标识')
+  id!!: id,
+
+  @persistence(name='fammbrnm')
+  @name(label='姓名')
+  name: string(100),
+
+  @persistence(name='bdt')
+  @name(label='出生日期')
+  birthdate: date,
+
+  @persistence(name='natid')
+  @name(label='身份证号')
+  national_id: string(18),
+  
+  @persistence(name='nt')
+  @name(label='备注')
+  note: string(1000),
+  
+  @persistence(name='sta')
+  @name(label='系统状态')
+  state: enum[E:有效,D:失效],
+  
+  @persistence(name='modid')
+  @name(label='修改者标识')
+  @reference(value='id', name='modifier')
+  modifier_id: string(64),
+
+  @persistence(name='modtyp')
+  @name(label='修改者类型')
+  @reference(value='type', name='modifier')
+  modifier_type: string(64),
+  
+  @persistence(name='crttm')
+  @name(label='创建时间')
+  created_time = now: datetime,
+
+  @persistence(name='lmt')
+  @name(label='最后更新时间')
+  last_modified_time: now
+>
+
+@persistence(name='tn_mm_acct')
+@name(label='账户', singular='account', plural='accounts')
+account<
+  @persistence(name='acctid')
+  @name(label='标识')
+  id!!: id,
+
+  @persistence(name='acctcd')
+  @name(label='账户编码')
+  code+: string(100),
+  
+  @persistence(name='acctnm')
+  @name(label='账户名称')
+  name: string(100),
+  
+  @persistence(name='accttyp')
+  @name(label='账户类型')
+  type: enum[AS:资产,LB:负债,EQ:权益,RV:收入,EX:费用,PF:利润],
+  
+  @persistence(name='cat')
+  @name(label='类别')
+  category: string(100),
+  
+  @persistence(name='nt')
+  @name(label='备注')
+  note: string(1000),
+  
+  @persistence(name='sta')
+  @name(label='系统状态')
+  state: enum[E:有效,D:失效],
+  
+  @persistence(name='modid')
+  @name(label='修改者标识')
+  @reference(value='id', name='modifier')
+  modifier_id: string(64),
+
+  @persistence(name='modtyp')
+  @name(label='修改者类型')
+  @reference(value='type', name='modifier')
+  modifier_type: string(64),
+  
+  @persistence(name='crttm')
+  @name(label='创建时间')
+  created_time = now: datetime,
+
+  @persistence(name='lmt')
+  @name(label='最后更新时间')
+  last_modified_time: now
+>
+
+@persistence(name='tn_mm_bnkacct')
+@name(label='银行账户', singular='bank_account', plural='bank_accounts')
+bank_account<
+
+  @persistence(name='bnkacctid')
+  @name(label='标识')
+  id!!: id,
+
+  @persistence(name='bnkacctnm')
+  @name(label='账户名称')
+  name: string(100),
+  
+  @persistence(name='bnkaccttyp')
+  @name(label='账户类型')
+  type: enum[BK:银行,CS:现金,CC:信用卡],
+  
+  @persistence(name='bnkacctno')
+  @name(label='账户名称')
+  account_number: string(100),
+
+  @persistence(name='bal')
+  @name(label='余额')
+  balance: number(12,2),
+
+  @persistence(name='curr')
+  @name(label='货币')
+  currency = 'CNY': string(10),
+  
+  @persistence(name='effdt')
+  @name(label='生效日期')
+  effective_date: date,
+  
+  @persistence(name='expdt')
+  @name(label='到期日期')
+  expiration_date: date,
+  
+  @persistence(name='nt')
+  @name(label='备注')
+  note: string(1000),
+
+  @persistence(name='sta')
+  @name(label='系统状态')
+  state: enum[E:有效,D:失效],
+  
+  @persistence(name='modid')
+  @name(label='修改者标识')
+  @reference(value='id', name='modifier')
+  modifier_id: string(64),
+
+  @persistence(name='modtyp')
+  @name(label='修改者类型')
+  @reference(value='type', name='modifier')
+  modifier_type: string(64),
+  
+  @persistence(name='crttm')
+  @name(label='创建时间')
+  created_time = now: datetime,
+
+  @persistence(name='lmt')
+  @name(label='最后更新时间')
+  last_modified_time: now
+>
+
+@persistence(name='tn_mm_tx')
+@name(label='交易', singular='transaction', plural='transactions')
+transaction<
+
+  @persistence(name='txid')
+  @name(label='标识')
+  id!!: id,
+
+  @persistence(name='acctid')
+  @name(label='账户')
+  account: &account(id),
+  
+  @persistence(name='txcat')
+  @name(label='交易类别')
+  transaction_category: &transaction_category(id),
+
+  @persistence(name='txtyp')
+  @name(label='交易类型')
+  type: enum[IN:收入,EX:支出,TS:转账],
+
+  @persistence(name='amount')
+  @name(label='金额')
+  amount: decimal,
+
+  @persistence(name='desc')
+  @name(label='描述')
+  description: string(255),
+
+  @persistence(name='txdate')
+  @name(label='交易时间')
+  transaction_date = now: datetime
+>
+
+@persistence(name='tn_mm_txcat')
+@name(label='交易类别', singular='transaction_category', plural='transaction_categories')
+transaction_category<
+
+  @persistence(name='txcatid')
+  @name(label='标识')
+  id!!: id,
+
+  @persistence(name='txcatnm')
+  @name(label='名称')
+  name: string(100),
+  
+  @persistence(name='txcattyp')
+  @name(label='交易类型')
+  type: enum[IN:收入,EX:支出,TS:转账],
+  
+  @persistence(name='nt')
+  @name(label='备注')
+  note: string(1000),
+  
+  @persistence(name='sta')
+  @name(label='系统状态')
+  state: enum[E:有效,D:失效],
+  
+  @persistence(name='modid')
+  @name(label='修改者标识')
+  @reference(value='id', name='modifier')
+  modifier_id: string(64),
+
+  @persistence(name='modtyp')
+  @name(label='修改者类型')
+  @reference(value='type', name='modifier')
+  modifier_type: string(64),
+  
+  @persistence(name='crttm')
+  @name(label='创建时间')
+  created_time = now: datetime,
+
+  @persistence(name='lmt')
+  @name(label='最后更新时间')
+  last_modified_time: now
+  
+>
+
+@persistence(name='tn_mm_ldgrent')
+@name(label='记账登记', singular='ledger_entry', plural='ledger_entries')
+ledger_entry<
+  
+  @persistence(name='ldgrentid')
+  @name(label='标识')
+  id!!: id,
+
+  @persistence(name='acctid')
+  @name(label='账户')
+  account: &account(id),
+  
+  @persistence(name='txid')
+  @name(label='交易')
+  transaction: &transaction(id),
+  
+  @persistence(name='entdt')
+  @name(label='登记日期')
+  entry_date: datetime,
+  
+  @persistence(name='descr')
+  @name(label='描述')
+  description: string(1000),
+  
+  @persistence(name='cramt')
+  @name(label='借方金额')
+  credit_amount: number(12,2),
+
+  @persistence(name='dramt')
+  @name(label='贷方金额')
+  debit_amount: number(12,2),
+  
+  @persistence(name='sta')
+  @name(label='系统状态')
+  state: enum[E:有效,D:失效],
+  
+  @persistence(name='modid')
+  @name(label='修改者标识')
+  @reference(value='id', name='modifier')
+  modifier_id: string(64),
+
+  @persistence(name='modtyp')
+  @name(label='修改者类型')
+  @reference(value='type', name='modifier')
+  modifier_type: string(64),
+  
+  @persistence(name='crttm')
+  @name(label='创建时间')
+  created_time = now: datetime,
+
+  @persistence(name='lmt')
+  @name(label='最后更新时间')
+  last_modified_time: now
+>
+
+@persistence(name='tn_mm_inv')
+@name(label='发票', singular='invoice', plural='invoices')
+invoice<
+  @persistence(name='invid')
+  @name(label='标识')
+  id!!: id,
+
+  @persistence(name='invnum')
+  @name(label='发票号')
+  invoice_number: string(50),
+
+  @persistence(name='amount')
+  @name(label='金额')
+  amount: number(12,2),
+
+  @persistence(name='status')
+  @name(label='状态')
+  status: enum[PD:待支付,DL:已支付,CL:已取消],
+
+  @persistence(name='duedate')
+  @name(label='到期日')
+  due_date: date,
+
+  @persistence(name='crttm')
+  @name(label='创建时间')
+  created_time = now: datetime
+>
