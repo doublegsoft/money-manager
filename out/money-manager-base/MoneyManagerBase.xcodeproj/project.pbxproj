@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+    SOURCESDBB00000000000001 /* MoneyManagerSQLite.m in Sources/DB */ = {isa = PBXBuildFile; fileRef = SOURCESDBM00000000000001 /* MoneyManagerSQLite.m */; };
+    VENDORSSQLITEB0000000001 /* sqlite3.c in Vendors/SQLite */ = {isa = PBXBuildFile; fileRef = VENDORSSQLITEC0000000001 /* sqlite3.c */; };
+    SOURCESUTILB000000000001 /* IdGenerator.m in Sources/DB */ = {isa = PBXBuildFile; fileRef = SOURCESUTILM000000000001 /* IdGenerator.m */; };
+    SOURCESPOCOB000000000001 /* FamilyMember.m in Sources/POCO */ = {isa = PBXBuildFile; fileRef = SOURCESPOCOM000000000001 /* FamilyMember.m */; };
+    SOURCESPOCOB000000000002 /* Account.m in Sources/POCO */ = {isa = PBXBuildFile; fileRef = SOURCESPOCOM000000000002 /* Account.m */; };
+    SOURCESPOCOB000000000003 /* BankAccount.m in Sources/POCO */ = {isa = PBXBuildFile; fileRef = SOURCESPOCOM000000000003 /* BankAccount.m */; };
+    SOURCESPOCOB000000000004 /* Transaction.m in Sources/POCO */ = {isa = PBXBuildFile; fileRef = SOURCESPOCOM000000000004 /* Transaction.m */; };
+    SOURCESPOCOB000000000005 /* TransactionCategory.m in Sources/POCO */ = {isa = PBXBuildFile; fileRef = SOURCESPOCOM000000000005 /* TransactionCategory.m */; };
+    SOURCESPOCOB000000000006 /* LedgerEntry.m in Sources/POCO */ = {isa = PBXBuildFile; fileRef = SOURCESPOCOM000000000006 /* LedgerEntry.m */; };
+    SOURCESPOCOB000000000007 /* Invoice.m in Sources/POCO */ = {isa = PBXBuildFile; fileRef = SOURCESPOCOM000000000007 /* Invoice.m */; };
+    SOURCESDTOB0000000000001 /* Pagination.m in Sources/DTO */ = {isa = PBXBuildFile; fileRef = SOURCESDTOM0000000000001 /* Pagination.m */; };
+    SOURCESDTOB0000000000002 /* BaseQuery.m in Sources/DTO */ = {isa = PBXBuildFile; fileRef = SOURCESDTOM0000000000002 /* BaseQuery.m */; };
+    SOURCESDTOB0000000000003 /* FamilyMemberQuery.m in Sources/DTO */ = {isa = PBXBuildFile; fileRef = SOURCESDTOM0000000000003 /* FamilyMemberQuery.m */; };
+    SOURCESDTOB0000000000004 /* AccountQuery.m in Sources/DTO */ = {isa = PBXBuildFile; fileRef = SOURCESDTOM0000000000004 /* AccountQuery.m */; };
+    SOURCESDTOB0000000000005 /* BankAccountQuery.m in Sources/DTO */ = {isa = PBXBuildFile; fileRef = SOURCESDTOM0000000000005 /* BankAccountQuery.m */; };
+    SOURCESDTOB0000000000006 /* TransactionQuery.m in Sources/DTO */ = {isa = PBXBuildFile; fileRef = SOURCESDTOM0000000000006 /* TransactionQuery.m */; };
+    SOURCESDTOB0000000000007 /* TransactionCategoryQuery.m in Sources/DTO */ = {isa = PBXBuildFile; fileRef = SOURCESDTOM0000000000007 /* TransactionCategoryQuery.m */; };
+    SOURCESDTOB0000000000008 /* LedgerEntryQuery.m in Sources/DTO */ = {isa = PBXBuildFile; fileRef = SOURCESDTOM0000000000008 /* LedgerEntryQuery.m */; };
+    SOURCESDTOB0000000000009 /* InvoiceQuery.m in Sources/DTO */ = {isa = PBXBuildFile; fileRef = SOURCESDTOM0000000000009 /* InvoiceQuery.m */; };
+    SOURCESJSONB000000000001 /* FamilyMemberJSON.m in Sources/JSON */ = {isa = PBXBuildFile; fileRef = SOURCESJSONM000000000001 /* FamilyMemberJSON.m */; };
+    SOURCESJSONB000000000002 /* AccountJSON.m in Sources/JSON */ = {isa = PBXBuildFile; fileRef = SOURCESJSONM000000000002 /* AccountJSON.m */; };
+    SOURCESJSONB000000000003 /* BankAccountJSON.m in Sources/JSON */ = {isa = PBXBuildFile; fileRef = SOURCESJSONM000000000003 /* BankAccountJSON.m */; };
+    SOURCESJSONB000000000004 /* TransactionJSON.m in Sources/JSON */ = {isa = PBXBuildFile; fileRef = SOURCESJSONM000000000004 /* TransactionJSON.m */; };
+    SOURCESJSONB000000000005 /* TransactionCategoryJSON.m in Sources/JSON */ = {isa = PBXBuildFile; fileRef = SOURCESJSONM000000000005 /* TransactionCategoryJSON.m */; };
+    SOURCESJSONB000000000006 /* LedgerEntryJSON.m in Sources/JSON */ = {isa = PBXBuildFile; fileRef = SOURCESJSONM000000000006 /* LedgerEntryJSON.m */; };
+    SOURCESJSONB000000000007 /* InvoiceJSON.m in Sources/JSON */ = {isa = PBXBuildFile; fileRef = SOURCESJSONM000000000007 /* InvoiceJSON.m */; };
+    SOURCESSQLB0000000000001 /* MoneyManagerSQL.m in Sources/SQL */ = {isa = PBXBuildFile; fileRef = SOURCESSQLM0000000000001 /* MoneyManagerSQL.m */; };
+    SOURCESSQLB0000000000002 /* MoneyManagerTableResult.m in Sources/SQL */ = {isa = PBXBuildFile; fileRef = SOURCESSQLM0000000000002 /* MoneyManagerTableResult.m */; };
+    SOURCESSQLB0000000000003 /* FamilyMemberSQL.m in Sources/SQL */ = {isa = PBXBuildFile; fileRef = SOURCESSQLM0000000000003 /* FamilyMemberSQL.m */; };
+    SOURCESSQLB0000000000004 /* AccountSQL.m in Sources/SQL */ = {isa = PBXBuildFile; fileRef = SOURCESSQLM0000000000004 /* AccountSQL.m */; };
+    SOURCESSQLB0000000000005 /* BankAccountSQL.m in Sources/SQL */ = {isa = PBXBuildFile; fileRef = SOURCESSQLM0000000000005 /* BankAccountSQL.m */; };
+    SOURCESSQLB0000000000006 /* TransactionSQL.m in Sources/SQL */ = {isa = PBXBuildFile; fileRef = SOURCESSQLM0000000000006 /* TransactionSQL.m */; };
+    SOURCESSQLB0000000000007 /* TransactionCategorySQL.m in Sources/SQL */ = {isa = PBXBuildFile; fileRef = SOURCESSQLM0000000000007 /* TransactionCategorySQL.m */; };
+    SOURCESSQLB0000000000008 /* LedgerEntrySQL.m in Sources/SQL */ = {isa = PBXBuildFile; fileRef = SOURCESSQLM0000000000008 /* LedgerEntrySQL.m */; };
+    SOURCESSQLB0000000000009 /* InvoiceSQL.m in Sources/SQL */ = {isa = PBXBuildFile; fileRef = SOURCESSQLM0000000000009 /* InvoiceSQL.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		LIB000000000000000000000 /* libMoneyManagerBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoneyManagerBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+    SOURCESDBH00000000000001 /* MoneyManagerSQLite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyManagerSQLite.h; sourceTree = "<group>"; };
+    SOURCESDBM00000000000001 /* MoneyManagerSQLite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyManagerSQLite.m; sourceTree = "<group>"; };
+    VENDORSSQLITEH0000000001 /* sqlite3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+    VENDORSSQLITEH0000000002 /* sqlite3ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+    VENDORSSQLITEC0000000001 /* sqlite3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+    SOURCESUTILH000000000001 /* IdGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdGenerator.h; sourceTree = "<group>"; };
+    SOURCESUTILM000000000001 /* IdGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdGenerator.m; sourceTree = "<group>"; };
+    SOURCESPOCOH000000000001 /* FamilyMember.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FamilyMember.h; sourceTree = "<group>"; };
+    SOURCESPOCOM000000000001 /* FamilyMember.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyMember.m; sourceTree = "<group>"; };
+    SOURCESPOCOH000000000002 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+    SOURCESPOCOM000000000002 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+    SOURCESPOCOH000000000003 /* BankAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
+    SOURCESPOCOM000000000003 /* BankAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+    SOURCESPOCOH000000000004 /* Transaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+    SOURCESPOCOM000000000004 /* Transaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+    SOURCESPOCOH000000000005 /* TransactionCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionCategory.h; sourceTree = "<group>"; };
+    SOURCESPOCOM000000000005 /* TransactionCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionCategory.m; sourceTree = "<group>"; };
+    SOURCESPOCOH000000000006 /* LedgerEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LedgerEntry.h; sourceTree = "<group>"; };
+    SOURCESPOCOM000000000006 /* LedgerEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerEntry.m; sourceTree = "<group>"; };
+    SOURCESPOCOH000000000007 /* Invoice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invoice.h; sourceTree = "<group>"; };
+    SOURCESPOCOM000000000007 /* Invoice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoice.m; sourceTree = "<group>"; };
+    SOURCESDTOH0000000000001 /* Pagination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pagination.h; sourceTree = "<group>"; };
+    SOURCESDTOM0000000000001 /* Pagination.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pagination.m; sourceTree = "<group>"; };
+    SOURCESDTOH0000000000002 /* BaseQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseQuery.h; sourceTree = "<group>"; };
+    SOURCESDTOM0000000000002 /* BaseQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseQuery.m; sourceTree = "<group>"; };
+    SOURCESDTOH0000000000003 /* FamilyMemberQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FamilyMemberQuery.h; sourceTree = "<group>"; };
+    SOURCESDTOM0000000000003 /* FamilyMemberQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyMemberQuery.m; sourceTree = "<group>"; };
+    SOURCESDTOH0000000000004 /* AccountQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountQuery.h; sourceTree = "<group>"; };
+    SOURCESDTOM0000000000004 /* AccountQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountQuery.m; sourceTree = "<group>"; };
+    SOURCESDTOH0000000000005 /* BankAccountQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAccountQuery.h; sourceTree = "<group>"; };
+    SOURCESDTOM0000000000005 /* BankAccountQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccountQuery.m; sourceTree = "<group>"; };
+    SOURCESDTOH0000000000006 /* TransactionQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionQuery.h; sourceTree = "<group>"; };
+    SOURCESDTOM0000000000006 /* TransactionQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionQuery.m; sourceTree = "<group>"; };
+    SOURCESDTOH0000000000007 /* TransactionCategoryQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionCategoryQuery.h; sourceTree = "<group>"; };
+    SOURCESDTOM0000000000007 /* TransactionCategoryQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionCategoryQuery.m; sourceTree = "<group>"; };
+    SOURCESDTOH0000000000008 /* LedgerEntryQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LedgerEntryQuery.h; sourceTree = "<group>"; };
+    SOURCESDTOM0000000000008 /* LedgerEntryQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerEntryQuery.m; sourceTree = "<group>"; };
+    SOURCESDTOH0000000000009 /* InvoiceQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvoiceQuery.h; sourceTree = "<group>"; };
+    SOURCESDTOM0000000000009 /* InvoiceQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvoiceQuery.m; sourceTree = "<group>"; };
+    SOURCESSQLH0000000000001 /* MoneyManagerSQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyManagerSQL.h; sourceTree = "<group>"; };
+    SOURCESSQLM0000000000001 /* MoneyManagerSQL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyManagerSQL.m; sourceTree = "<group>"; };
+    SOURCESSQLH0000000000002 /* MoneyManagerTableResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyManagerTableResult.h; sourceTree = "<group>"; };
+    SOURCESSQLM0000000000002 /* MoneyManagerTableResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyManagerTableResult.m; sourceTree = "<group>"; };
+    SOURCESSQLH0000000000003 /* FamilyMemberSQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FamilyMemberSQL.h; sourceTree = "<group>"; };
+    SOURCESSQLM0000000000003 /* FamilyMemberSQL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyMemberSQL.m; sourceTree = "<group>"; };
+    SOURCESSQLH0000000000004 /* AccountSQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountSQL.h; sourceTree = "<group>"; };
+    SOURCESSQLM0000000000004 /* AccountSQL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountSQL.m; sourceTree = "<group>"; };
+    SOURCESSQLH0000000000005 /* BankAccountSQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAccountSQL.h; sourceTree = "<group>"; };
+    SOURCESSQLM0000000000005 /* BankAccountSQL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccountSQL.m; sourceTree = "<group>"; };
+    SOURCESSQLH0000000000006 /* TransactionSQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionSQL.h; sourceTree = "<group>"; };
+    SOURCESSQLM0000000000006 /* TransactionSQL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionSQL.m; sourceTree = "<group>"; };
+    SOURCESSQLH0000000000007 /* TransactionCategorySQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionCategorySQL.h; sourceTree = "<group>"; };
+    SOURCESSQLM0000000000007 /* TransactionCategorySQL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionCategorySQL.m; sourceTree = "<group>"; };
+    SOURCESSQLH0000000000008 /* LedgerEntrySQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LedgerEntrySQL.h; sourceTree = "<group>"; };
+    SOURCESSQLM0000000000008 /* LedgerEntrySQL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerEntrySQL.m; sourceTree = "<group>"; };
+    SOURCESSQLH0000000000009 /* InvoiceSQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvoiceSQL.h; sourceTree = "<group>"; };
+    SOURCESSQLM0000000000009 /* InvoiceSQL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvoiceSQL.m; sourceTree = "<group>"; };
+    SOURCESJSONH000000000001 /* FamilyMemberJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FamilyMemberJSON.h; sourceTree = "<group>"; };
+    SOURCESJSONM000000000001 /* FamilyMemberJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyMemberJSON.m; sourceTree = "<group>"; };
+    SOURCESJSONH000000000002 /* AccountJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountJSON.h; sourceTree = "<group>"; };
+    SOURCESJSONM000000000002 /* AccountJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountJSON.m; sourceTree = "<group>"; };
+    SOURCESJSONH000000000003 /* BankAccountJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAccountJSON.h; sourceTree = "<group>"; };
+    SOURCESJSONM000000000003 /* BankAccountJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccountJSON.m; sourceTree = "<group>"; };
+    SOURCESJSONH000000000004 /* TransactionJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionJSON.h; sourceTree = "<group>"; };
+    SOURCESJSONM000000000004 /* TransactionJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionJSON.m; sourceTree = "<group>"; };
+    SOURCESJSONH000000000005 /* TransactionCategoryJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionCategoryJSON.h; sourceTree = "<group>"; };
+    SOURCESJSONM000000000005 /* TransactionCategoryJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionCategoryJSON.m; sourceTree = "<group>"; };
+    SOURCESJSONH000000000006 /* LedgerEntryJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LedgerEntryJSON.h; sourceTree = "<group>"; };
+    SOURCESJSONM000000000006 /* LedgerEntryJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerEntryJSON.m; sourceTree = "<group>"; };
+    SOURCESJSONH000000000007 /* InvoiceJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvoiceJSON.h; sourceTree = "<group>"; };
+    SOURCESJSONM000000000007 /* InvoiceJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvoiceJSON.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		PROJ00000000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				SOURCES00000000000000000 /* Sources */,
+				VENDORS00000000000000000 /* Vendors */,
+				PROD00000000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		SOURCES00000000000000000 /* Sources */ = {
+      isa = PBXGroup;
+      children = (
+        SOURCESPOCO0000000000000,
+        SOURCESDTO00000000000000,
+        SOURCESJSON0000000000000,
+        SOURCESSQL00000000000000,
+        SOURCESDB000000000000000,
+        SOURCESUTIL0000000000000,
+      );
+      path = Sources;
+      sourceTree = "<group>";
+    };
+    VENDORS00000000000000000 /* Vendors */ = {
+      isa = PBXGroup;
+      children = (
+        VENDORSSQLITE00000000000,
+      );
+      path = Vendors;
+      sourceTree = "<group>";
+    };
+		PROD00000000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				LIB000000000000000000000 /* libMoneyManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+    SOURCESPOCO0000000000000 /* Sources/POCO */ = {
+      isa = PBXGroup;
+      children = (
+        SOURCESPOCOH000000000001 /* FamilyMember.h */,
+        SOURCESPOCOM000000000001 /* FamilyMember.m */,
+        SOURCESPOCOH000000000002 /* Account.h */,
+        SOURCESPOCOM000000000002 /* Account.m */,
+        SOURCESPOCOH000000000003 /* BankAccount.h */,
+        SOURCESPOCOM000000000003 /* BankAccount.m */,
+        SOURCESPOCOH000000000004 /* Transaction.h */,
+        SOURCESPOCOM000000000004 /* Transaction.m */,
+        SOURCESPOCOH000000000005 /* TransactionCategory.h */,
+        SOURCESPOCOM000000000005 /* TransactionCategory.m */,
+        SOURCESPOCOH000000000006 /* LedgerEntry.h */,
+        SOURCESPOCOM000000000006 /* LedgerEntry.m */,
+        SOURCESPOCOH000000000007 /* Invoice.h */,
+        SOURCESPOCOM000000000007 /* Invoice.m */,
+      );
+      path = POCO;
+      sourceTree = "<group>";
+    };
+    SOURCESDTO00000000000000 /* Sources/DTO */ = {
+      isa = PBXGroup;
+      children = (
+        SOURCESDTOH0000000000001 /* Pagination.h */,
+        SOURCESDTOM0000000000001 /* Pagination.m */,
+        SOURCESDTOH0000000000002 /* BaseQuery.h */,
+        SOURCESDTOM0000000000002 /* BaseQuery.m */,
+        SOURCESDTOH0000000000003 /* FamilyMemberQuery.h */,
+        SOURCESDTOM0000000000003 /* FamilyMemberQuery.m */,
+        SOURCESDTOH0000000000004 /* AccountQuery.h */,
+        SOURCESDTOM0000000000004 /* AccountQuery.m */,
+        SOURCESDTOH0000000000005 /* BankAccountQuery.h */,
+        SOURCESDTOM0000000000005 /* BankAccountQuery.m */,
+        SOURCESDTOH0000000000006 /* TransactionQuery.h */,
+        SOURCESDTOM0000000000006 /* TransactionQuery.m */,
+        SOURCESDTOH0000000000007 /* TransactionCategoryQuery.h */,
+        SOURCESDTOM0000000000007 /* TransactionCategoryQuery.m */,
+        SOURCESDTOH0000000000008 /* LedgerEntryQuery.h */,
+        SOURCESDTOM0000000000008 /* LedgerEntryQuery.m */,
+        SOURCESDTOH0000000000009 /* InvoiceQuery.h */,
+        SOURCESDTOM0000000000009 /* InvoiceQuery.m */,
+      );
+      path = DTO;
+      sourceTree = "<group>";
+    };
+    SOURCESJSON0000000000000 /* Sources/JSON */ = {
+      isa = PBXGroup;
+      children = (
+        SOURCESJSONH000000000001 /* FamilyMemberJSON.h */,
+        SOURCESJSONM000000000001 /* FamilyMemberJSON.m */,
+        SOURCESJSONH000000000002 /* AccountJSON.h */,
+        SOURCESJSONM000000000002 /* AccountJSON.m */,
+        SOURCESJSONH000000000003 /* BankAccountJSON.h */,
+        SOURCESJSONM000000000003 /* BankAccountJSON.m */,
+        SOURCESJSONH000000000004 /* TransactionJSON.h */,
+        SOURCESJSONM000000000004 /* TransactionJSON.m */,
+        SOURCESJSONH000000000005 /* TransactionCategoryJSON.h */,
+        SOURCESJSONM000000000005 /* TransactionCategoryJSON.m */,
+        SOURCESJSONH000000000006 /* LedgerEntryJSON.h */,
+        SOURCESJSONM000000000006 /* LedgerEntryJSON.m */,
+        SOURCESJSONH000000000007 /* InvoiceJSON.h */,
+        SOURCESJSONM000000000007 /* InvoiceJSON.m */,
+      );
+      path = JSON;
+      sourceTree = "<group>";
+    };
+    SOURCESSQL00000000000000 /* Sources/SQL */ = {
+      isa = PBXGroup;
+      children = (
+        SOURCESSQLH0000000000001 /* MoneyManagerSQL.h */,
+        SOURCESSQLM0000000000001 /* MoneyManagerSQL.m */,
+        SOURCESSQLH0000000000002 /* MoneyManagerTableResult.h */,
+        SOURCESSQLM0000000000002 /* MoneyManagerTableResult.m */,
+        SOURCESSQLH0000000000003 /* FamilyMemberSQL.h */,
+        SOURCESSQLM0000000000003 /* FamilyMemberSQL.m */,
+        SOURCESSQLH0000000000004 /* AccountSQL.h */,
+        SOURCESSQLM0000000000004 /* AccountSQL.m */,
+        SOURCESSQLH0000000000005 /* BankAccountSQL.h */,
+        SOURCESSQLM0000000000005 /* BankAccountSQL.m */,
+        SOURCESSQLH0000000000006 /* TransactionSQL.h */,
+        SOURCESSQLM0000000000006 /* TransactionSQL.m */,
+        SOURCESSQLH0000000000007 /* TransactionCategorySQL.h */,
+        SOURCESSQLM0000000000007 /* TransactionCategorySQL.m */,
+        SOURCESSQLH0000000000008 /* LedgerEntrySQL.h */,
+        SOURCESSQLM0000000000008 /* LedgerEntrySQL.m */,
+        SOURCESSQLH0000000000009 /* InvoiceSQL.h */,
+        SOURCESSQLM0000000000009 /* InvoiceSQL.m */,
+      );
+      path = SQL;
+      sourceTree = "<group>";
+    };
+    SOURCESDB000000000000000 /* Sources/DB */ = {
+      isa = PBXGroup;
+      children = (
+        SOURCESDBH00000000000001 /* MoneyManagerSQLite.h */,
+        SOURCESDBM00000000000001 /* MoneyManagerSQLite.m */,
+      );
+      path = DB;
+      sourceTree = "<group>";
+    };
+    SOURCESUTIL0000000000000 /* Sources/DB */ = {
+      isa = PBXGroup;
+      children = (
+        SOURCESUTILH000000000001 /* IdGenerator.h */,
+        SOURCESUTILM000000000001 /* IdGenerator.m */,
+      );
+      path = Util;
+      sourceTree = "<group>";
+    };
+    VENDORSSQLITE00000000000 /* Vendors/SQLite */ = {
+      isa = PBXGroup;
+      children = (   
+        VENDORSSQLITEH0000000001 /* sqlite3.h */,
+        VENDORSSQLITEH0000000002 /* sqlite3ext.h */,
+        VENDORSSQLITEC0000000001 /* sqlite3.c */,
+      );
+      path = SQLite;
+      sourceTree = "<group>";
+    };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TARGET000000000000000000 /* MoneyManagerBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA8034FC2D4DFEC50030ECF9 /* Build configuration list for PBXNativeTarget "MoneyManagerBase" */;
+			buildPhases = (
+				SOURCESB0000000000000000 /* Sources */,
+				AA8034EF2D4DFEC50030ECF9 /* Frameworks */,
+				AA8034F02D4DFEC50030ECF9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				SOURCES00000000000000000 /* MoneyManagerBase */,
+			);
+			name = MoneyManagerBase;
+			packageProductDependencies = (
+			);
+			productName = MoneyManagerBase;
+			productReference = LIB000000000000000000000 /* MoneyManagerBase */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ROOT00000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					TARGET000000000000000000 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = AA8034ED2D4DFEC50030ECF9 /* Build configuration list for PBXProject "MoneyManager" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = PROJ00000000000000000000;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AA8034F32D4DFEC50030ECF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TARGET000000000000000000 /* MoneyManagerBase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SOURCESB0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			  SOURCESDBB00000000000001,
+			  VENDORSSQLITEB0000000001,
+			  SOURCESUTILB000000000001,
+        SOURCESPOCOB000000000001,
+        SOURCESPOCOB000000000002,
+        SOURCESPOCOB000000000003,
+        SOURCESPOCOB000000000004,
+        SOURCESPOCOB000000000005,
+        SOURCESPOCOB000000000006,
+        SOURCESPOCOB000000000007,
+        SOURCESDTOB0000000000001,
+        SOURCESDTOB0000000000002,
+        SOURCESDTOB0000000000003,
+        SOURCESDTOB0000000000004,
+        SOURCESDTOB0000000000005,
+        SOURCESDTOB0000000000006,
+        SOURCESDTOB0000000000007,
+        SOURCESDTOB0000000000008,
+        SOURCESDTOB0000000000009,
+        SOURCESSQLB0000000000001,
+        SOURCESSQLB0000000000002,
+        SOURCESSQLB0000000000003,
+        SOURCESSQLB0000000000004,
+        SOURCESSQLB0000000000005,
+        SOURCESSQLB0000000000006,
+        SOURCESSQLB0000000000007,
+        SOURCESSQLB0000000000008,
+        SOURCESSQLB0000000000009,
+        SOURCESJSONB000000000001,
+        SOURCESJSONB000000000002,
+        SOURCESJSONB000000000003,
+        SOURCESJSONB000000000004,
+        SOURCESJSONB000000000005,
+        SOURCESJSONB000000000006,
+        SOURCESJSONB000000000007,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA8034FA2D4DFEC50030ECF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA8034FB2D4DFEC50030ECF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA8034FD2D4DFEC50030ECF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6X9G3CYFJ;
+				HEADER_SEARCH_PATHS = (
+          Sources,
+          Vendors,
+        );
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA8034FE2D4DFEC50030ECF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6X9G3CYFJ;
+				HEADER_SEARCH_PATHS = (
+          Sources,
+          Vendors,
+        );
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA8034ED2D4DFEC50030ECF9 /* Build configuration list for PBXProject "MoneyManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8034FA2D4DFEC50030ECF9 /* Debug */,
+				AA8034FB2D4DFEC50030ECF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA8034FC2D4DFEC50030ECF9 /* Build configuration list for PBXNativeTarget "MoneyManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8034FD2D4DFEC50030ECF9 /* Debug */,
+				AA8034FE2D4DFEC50030ECF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ROOT00000000000000000000 /* Project object */;
+}

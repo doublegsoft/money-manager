@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA1EB34A2D89BED4006AB049 /* libMoneyManagerBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1EB3492D89BED4006AB049 /* libMoneyManagerBase.a */; };
+		AA1EB34C2D89BFBF006AB049 /* libMoneyManagerBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1EB34B2D89BFBF006AB049 /* libMoneyManagerBase.a */; };
+		AA2625EA2D4E95AD00E1F22F /* tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AA2625E92D4E95AD00E1F22F /* tap.mp3 */; };
+		AA28B12E2D40B1000017C8BF /* Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = AA28B12D2D40B0F40017C8BF /* Colors.m */; };
+		AA2E4A0E2D45319C00F332D5 /* AnalysisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2E4A0D2D45319800F332D5 /* AnalysisVC.m */; };
+		AA2E4A112D45320000F332D5 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2E4A102D4531FB00F332D5 /* SettingsVC.m */; };
+		AA35C6452D43E81700CFE881 /* Styles.m in Sources */ = {isa = PBXBuildFile; fileRef = AA35C6442D43E81100CFE881 /* Styles.m */; };
+		AA35C6482D43F3B500CFE881 /* BottomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AA35C6472D43F3B400CFE881 /* BottomNavigationBar.m */; };
+		AA35C64B2D43FCC000CFE881 /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = AA35C64A2D43FCBC00CFE881 /* Container.m */; };
+		AA39D6DB2D4BD1F400A92D5F /* Images.m in Sources */ = {isa = PBXBuildFile; fileRef = AA39D6DA2D4BD1F200A92D5F /* Images.m */; };
+		AA39D6DE2D4BD72C00A92D5F /* NavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA39D6DD2D4BD72700A92D5F /* NavigationVC.m */; };
+		AA39D6E12D4BE83E00A92D5F /* BarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = AA39D6E02D4BE83B00A92D5F /* BarChart.m */; };
+		AA62713F2D4C893A0082884C /* MoneyPad.m in Sources */ = {isa = PBXBuildFile; fileRef = AA62713E2D4C89380082884C /* MoneyPad.m */; };
+		AA6271422D4C8E4F0082884C /* LineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6271412D4C8E4D0082884C /* LineChart.m */; };
+		AA647D8A2D4001120039F93D /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = AA647D892D4001110039F93D /* Avatar.m */; };
+		AA6664AC2D4B77ED003E8290 /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = AA6664AB2D4B77ED003E8290 /* CropViewController */; };
+		AA6664AE2D4B77ED003E8290 /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = AA6664AD2D4B77ED003E8290 /* TOCropViewController */; };
+		AA8035022D4E048E0030ECF9 /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8035012D4E048A0030ECF9 /* NavigationBar.m */; };
+		AA8035052D4E124D0030ECF9 /* TransactionTile.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8035042D4E12490030ECF9 /* TransactionTile.m */; };
+		AA87AC372D4DDB0C004017EA /* ExpenseListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA87AC362D4DDB08004017EA /* ExpenseListVC.m */; };
+		AA87AC3A2D4DDBE5004017EA /* IncomeListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA87AC392D4DDBE1004017EA /* IncomeListVC.m */; };
+		AA90871C2D41297C001BEA97 /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AA90871B2D412976001BEA97 /* RoundedButton.m */; };
+		AAA434332D3D6C5B00BF9B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA4342B2D3D6C5B00BF9B35 /* Main.storyboard */; };
+		AAA434352D3D6C5B00BF9B35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA434292D3D6C5B00BF9B35 /* LaunchScreen.storyboard */; };
+		AAA434362D3D6C5B00BF9B35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA434272D3D6C5B00BF9B35 /* AppDelegate.m */; };
+		AAA434372D3D6C5B00BF9B35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA4342E2D3D6C5B00BF9B35 /* main.m */; };
+		AAA434382D3D6C5B00BF9B35 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA434302D3D6C5B00BF9B35 /* SceneDelegate.m */; };
+		AAA434392D3D6C5B00BF9B35 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA434322D3D6C5B00BF9B35 /* MainVC.m */; };
+		AAA4343C2D3D6CDF00BF9B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA4343B2D3D6CDF00BF9B35 /* Assets.xcassets */; };
+		AAE450A62D3FC7B300D854F2 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE450A52D3FC7B000D854F2 /* WelcomeVC.m */; };
+		AAE450AE2D3FC9AC00D854F2 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE450AC2D3FC9AC00D854F2 /* Welcome.storyboard */; };
+		AAF13A172D50AF1300EEB045 /* RecurringExpenses.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF13A162D50AF1100EEB045 /* RecurringExpenses.m */; };
+		AAF13A1A2D50E37400EEB045 /* ExpenseEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF13A192D50E36B00EEB045 /* ExpenseEdit.m */; };
+		AAF34B2E2D44AE73001C8022 /* EmptyState.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF34B2D2D44AE71001C8022 /* EmptyState.m */; };
+		AAF34B312D44E03E001C8022 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF34B302D44E03B001C8022 /* HomeVC.m */; };
+		AAF34B342D44EE75001C8022 /* TransactionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF34B332D44EE74001C8022 /* TransactionVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA1EB3492D89BED4006AB049 /* libMoneyManagerBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMoneyManagerBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1EB34B2D89BFBF006AB049 /* libMoneyManagerBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMoneyManagerBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2625E92D4E95AD00E1F22F /* tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tap.mp3; path = Sound/tap.mp3; sourceTree = "<group>"; };
+		AA28B12D2D40B0F40017C8BF /* Colors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Colors.m; sourceTree = "<group>"; };
+		AA28B12F2D40B1040017C8BF /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		AA2E4A0C2D45318D00F332D5 /* AnalysisVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalysisVC.h; sourceTree = "<group>"; };
+		AA2E4A0D2D45319800F332D5 /* AnalysisVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalysisVC.m; sourceTree = "<group>"; };
+		AA2E4A0F2D4531F300F332D5 /* SettingsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		AA2E4A102D4531FB00F332D5 /* SettingsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		AA35C6432D43E61200CFE881 /* Styles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Styles.h; sourceTree = "<group>"; };
+		AA35C6442D43E81100CFE881 /* Styles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Styles.m; sourceTree = "<group>"; };
+		AA35C6462D43F3AA00CFE881 /* BottomNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BottomNavigationBar.h; sourceTree = "<group>"; };
+		AA35C6472D43F3B400CFE881 /* BottomNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BottomNavigationBar.m; sourceTree = "<group>"; };
+		AA35C6492D43FCB200CFE881 /* Container.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
+		AA35C64A2D43FCBC00CFE881 /* Container.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
+		AA39D6D92D4BD1EC00A92D5F /* Images.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Images.h; sourceTree = "<group>"; };
+		AA39D6DA2D4BD1F200A92D5F /* Images.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Images.m; sourceTree = "<group>"; };
+		AA39D6DC2D4BD71F00A92D5F /* NavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationVC.h; sourceTree = "<group>"; };
+		AA39D6DD2D4BD72700A92D5F /* NavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationVC.m; sourceTree = "<group>"; };
+		AA39D6DF2D4BE83200A92D5F /* BarChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChart.h; sourceTree = "<group>"; };
+		AA39D6E02D4BE83B00A92D5F /* BarChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChart.m; sourceTree = "<group>"; };
+		AA4142E62D89AF4C002BCF6E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AA62713D2D4C89280082884C /* MoneyPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyPad.h; sourceTree = "<group>"; };
+		AA62713E2D4C89380082884C /* MoneyPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyPad.m; sourceTree = "<group>"; };
+		AA6271402D4C8E450082884C /* LineChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineChart.h; sourceTree = "<group>"; };
+		AA6271412D4C8E4D0082884C /* LineChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineChart.m; sourceTree = "<group>"; };
+		AA647D882D4001070039F93D /* Avatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
+		AA647D892D4001110039F93D /* Avatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
+		AA8035002D4E047F0030ECF9 /* NavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
+		AA8035012D4E048A0030ECF9 /* NavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
+		AA8035032D4E123D0030ECF9 /* TransactionTile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionTile.h; sourceTree = "<group>"; };
+		AA8035042D4E12490030ECF9 /* TransactionTile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionTile.m; sourceTree = "<group>"; };
+		AA87AC352D4DDAFC004017EA /* ExpenseListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpenseListVC.h; sourceTree = "<group>"; };
+		AA87AC362D4DDB08004017EA /* ExpenseListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpenseListVC.m; sourceTree = "<group>"; };
+		AA87AC382D4DDBD4004017EA /* IncomeListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncomeListVC.h; sourceTree = "<group>"; };
+		AA87AC392D4DDBE1004017EA /* IncomeListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IncomeListVC.m; sourceTree = "<group>"; };
+		AA90871B2D412976001BEA97 /* RoundedButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
+		AA90871D2D412980001BEA97 /* RoundedButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedButton.h; sourceTree = "<group>"; };
+		AAA434072D3D6B6D00BF9B35 /* moneymanager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moneymanager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAA434262D3D6C5B00BF9B35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAA434272D3D6C5B00BF9B35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAA434282D3D6C5B00BF9B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAA4342A2D3D6C5B00BF9B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		AAA4342D2D3D6C5B00BF9B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAA4342E2D3D6C5B00BF9B35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAA4342F2D3D6C5B00BF9B35 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		AAA434302D3D6C5B00BF9B35 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		AAA434312D3D6C5B00BF9B35 /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		AAA434322D3D6C5B00BF9B35 /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		AAA4343B2D3D6CDF00BF9B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAE450A42D3FC79700D854F2 /* WelcomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
+		AAE450A52D3FC7B000D854F2 /* WelcomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
+		AAE450AD2D3FC9AC00D854F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Welcome.storyboard; sourceTree = "<group>"; };
+		AAF13A152D50AF0500EEB045 /* RecurringExpenses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecurringExpenses.h; sourceTree = "<group>"; };
+		AAF13A162D50AF1100EEB045 /* RecurringExpenses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecurringExpenses.m; sourceTree = "<group>"; };
+		AAF13A182D50E34E00EEB045 /* ExpenseEdit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpenseEdit.h; sourceTree = "<group>"; };
+		AAF13A192D50E36B00EEB045 /* ExpenseEdit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpenseEdit.m; sourceTree = "<group>"; };
+		AAF34B2C2D44AE66001C8022 /* EmptyState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyState.h; sourceTree = "<group>"; };
+		AAF34B2D2D44AE71001C8022 /* EmptyState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyState.m; sourceTree = "<group>"; };
+		AAF34B2F2D44E030001C8022 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		AAF34B302D44E03B001C8022 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		AAF34B322D44EE6A001C8022 /* TransactionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionVC.h; sourceTree = "<group>"; };
+		AAF34B332D44EE74001C8022 /* TransactionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAA434042D3D6B6D00BF9B35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6664AE2D4B77ED003E8290 /* TOCropViewController in Frameworks */,
+				AA1EB34C2D89BFBF006AB049 /* libMoneyManagerBase.a in Frameworks */,
+				AA1EB34A2D89BED4006AB049 /* libMoneyManagerBase.a in Frameworks */,
+				AA6664AC2D4B77ED003E8290 /* CropViewController in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA28B12C2D40B0E20017C8BF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AA39D6D92D4BD1EC00A92D5F /* Images.h */,
+				AA39D6DA2D4BD1F200A92D5F /* Images.m */,
+				AA28B12F2D40B1040017C8BF /* Colors.h */,
+				AA28B12D2D40B0F40017C8BF /* Colors.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		AA4142E52D89AF4C002BCF6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA1EB34B2D89BFBF006AB049 /* libMoneyManagerBase.a */,
+				AA1EB3492D89BED4006AB049 /* libMoneyManagerBase.a */,
+				AA4142E62D89AF4C002BCF6E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAA433FE2D3D6B6D00BF9B35 = {
+			isa = PBXGroup;
+			children = (
+				AAA4343A2D3D6CAE00BF9B35 /* Resources */,
+				AAA434242D3D6BD500BF9B35 /* Sources */,
+				AACB53DB2D4F544300093C5B /* Vendors */,
+				AA4142E52D89AF4C002BCF6E /* Frameworks */,
+				AAA434082D3D6B6D00BF9B35 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAA434082D3D6B6D00BF9B35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAA434072D3D6B6D00BF9B35 /* moneymanager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAA434242D3D6BD500BF9B35 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA28B12C2D40B0E20017C8BF /* Util */,
+				AAE450AF2D3FCD7100D854F2 /* DS */,
+				AAE450A12D3FC76300D854F2 /* VC */,
+				AAA4342E2D3D6C5B00BF9B35 /* main.m */,
+				AAA434262D3D6C5B00BF9B35 /* AppDelegate.h */,
+				AAA434272D3D6C5B00BF9B35 /* AppDelegate.m */,
+				AAA4342F2D3D6C5B00BF9B35 /* SceneDelegate.h */,
+				AAA434302D3D6C5B00BF9B35 /* SceneDelegate.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AAA4342C2D3D6C5B00BF9B35 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AAA434292D3D6C5B00BF9B35 /* LaunchScreen.storyboard */,
+				AAA4342B2D3D6C5B00BF9B35 /* Main.storyboard */,
+				AAE450AC2D3FC9AC00D854F2 /* Welcome.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		AAA4343A2D3D6CAE00BF9B35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAA4343B2D3D6CDF00BF9B35 /* Assets.xcassets */,
+				AAA4342C2D3D6C5B00BF9B35 /* Base.lproj */,
+				AAA4342D2D3D6C5B00BF9B35 /* Info.plist */,
+				AA2625E92D4E95AD00E1F22F /* tap.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AACB53DB2D4F544300093C5B /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		AAE450A12D3FC76300D854F2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				AA87AC382D4DDBD4004017EA /* IncomeListVC.h */,
+				AA87AC392D4DDBE1004017EA /* IncomeListVC.m */,
+				AA87AC352D4DDAFC004017EA /* ExpenseListVC.h */,
+				AA87AC362D4DDB08004017EA /* ExpenseListVC.m */,
+				AA2E4A0F2D4531F300F332D5 /* SettingsVC.h */,
+				AA2E4A102D4531FB00F332D5 /* SettingsVC.m */,
+				AA2E4A0C2D45318D00F332D5 /* AnalysisVC.h */,
+				AA2E4A0D2D45319800F332D5 /* AnalysisVC.m */,
+				AAF34B322D44EE6A001C8022 /* TransactionVC.h */,
+				AAF34B332D44EE74001C8022 /* TransactionVC.m */,
+				AAF34B2F2D44E030001C8022 /* HomeVC.h */,
+				AAF34B302D44E03B001C8022 /* HomeVC.m */,
+				AAA434312D3D6C5B00BF9B35 /* MainVC.h */,
+				AAA434322D3D6C5B00BF9B35 /* MainVC.m */,
+				AAE450A42D3FC79700D854F2 /* WelcomeVC.h */,
+				AAE450A52D3FC7B000D854F2 /* WelcomeVC.m */,
+				AA39D6DC2D4BD71F00A92D5F /* NavigationVC.h */,
+				AA39D6DD2D4BD72700A92D5F /* NavigationVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		AAE450AF2D3FCD7100D854F2 /* DS */ = {
+			isa = PBXGroup;
+			children = (
+				AAF13A182D50E34E00EEB045 /* ExpenseEdit.h */,
+				AAF13A192D50E36B00EEB045 /* ExpenseEdit.m */,
+				AAF13A152D50AF0500EEB045 /* RecurringExpenses.h */,
+				AAF13A162D50AF1100EEB045 /* RecurringExpenses.m */,
+				AA8035032D4E123D0030ECF9 /* TransactionTile.h */,
+				AA8035042D4E12490030ECF9 /* TransactionTile.m */,
+				AA8035002D4E047F0030ECF9 /* NavigationBar.h */,
+				AA8035012D4E048A0030ECF9 /* NavigationBar.m */,
+				AA6271402D4C8E450082884C /* LineChart.h */,
+				AA6271412D4C8E4D0082884C /* LineChart.m */,
+				AA62713D2D4C89280082884C /* MoneyPad.h */,
+				AA62713E2D4C89380082884C /* MoneyPad.m */,
+				AA39D6DF2D4BE83200A92D5F /* BarChart.h */,
+				AA39D6E02D4BE83B00A92D5F /* BarChart.m */,
+				AAF34B2C2D44AE66001C8022 /* EmptyState.h */,
+				AAF34B2D2D44AE71001C8022 /* EmptyState.m */,
+				AA35C6492D43FCB200CFE881 /* Container.h */,
+				AA35C64A2D43FCBC00CFE881 /* Container.m */,
+				AA35C6462D43F3AA00CFE881 /* BottomNavigationBar.h */,
+				AA35C6472D43F3B400CFE881 /* BottomNavigationBar.m */,
+				AA35C6432D43E61200CFE881 /* Styles.h */,
+				AA35C6442D43E81100CFE881 /* Styles.m */,
+				AA90871D2D412980001BEA97 /* RoundedButton.h */,
+				AA90871B2D412976001BEA97 /* RoundedButton.m */,
+				AA647D882D4001070039F93D /* Avatar.h */,
+				AA647D892D4001110039F93D /* Avatar.m */,
+			);
+			path = DS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAA434062D3D6B6D00BF9B35 /* moneymanager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAA4341F2D3D6B7000BF9B35 /* Build configuration list for PBXNativeTarget "moneymanager" */;
+			buildPhases = (
+				AAA434032D3D6B6D00BF9B35 /* Sources */,
+				AAA434042D3D6B6D00BF9B35 /* Frameworks */,
+				AAA434052D3D6B6D00BF9B35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = moneymanager;
+			packageProductDependencies = (
+				AA6664AB2D4B77ED003E8290 /* CropViewController */,
+				AA6664AD2D4B77ED003E8290 /* TOCropViewController */,
+			);
+			productName = moneymanager;
+			productReference = AAA434072D3D6B6D00BF9B35 /* moneymanager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAA433FF2D3D6B6D00BF9B35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					AAA434062D3D6B6D00BF9B35 = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+					};
+				};
+			};
+			buildConfigurationList = AAA434022D3D6B6D00BF9B35 /* Build configuration list for PBXProject "MoneyManager" */;
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = AAA433FE2D3D6B6D00BF9B35;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AA6664AA2D4B77ED003E8290 /* XCLocalSwiftPackageReference "Vendors/TOCropViewController" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AAA434082D3D6B6D00BF9B35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAA434062D3D6B6D00BF9B35 /* moneymanager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAA434052D3D6B6D00BF9B35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2625EA2D4E95AD00E1F22F /* tap.mp3 in Resources */,
+				AAA434332D3D6C5B00BF9B35 /* Main.storyboard in Resources */,
+				AAE450AE2D3FC9AC00D854F2 /* Welcome.storyboard in Resources */,
+				AAA4343C2D3D6CDF00BF9B35 /* Assets.xcassets in Resources */,
+				AAA434352D3D6C5B00BF9B35 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAA434032D3D6B6D00BF9B35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA434362D3D6C5B00BF9B35 /* AppDelegate.m in Sources */,
+				AA6271422D4C8E4F0082884C /* LineChart.m in Sources */,
+				AA2E4A112D45320000F332D5 /* SettingsVC.m in Sources */,
+				AA87AC372D4DDB0C004017EA /* ExpenseListVC.m in Sources */,
+				AA39D6E12D4BE83E00A92D5F /* BarChart.m in Sources */,
+				AA647D8A2D4001120039F93D /* Avatar.m in Sources */,
+				AAA434372D3D6C5B00BF9B35 /* main.m in Sources */,
+				AAF13A172D50AF1300EEB045 /* RecurringExpenses.m in Sources */,
+				AA8035022D4E048E0030ECF9 /* NavigationBar.m in Sources */,
+				AA35C64B2D43FCC000CFE881 /* Container.m in Sources */,
+				AAF34B312D44E03E001C8022 /* HomeVC.m in Sources */,
+				AA8035052D4E124D0030ECF9 /* TransactionTile.m in Sources */,
+				AAA434382D3D6C5B00BF9B35 /* SceneDelegate.m in Sources */,
+				AA2E4A0E2D45319C00F332D5 /* AnalysisVC.m in Sources */,
+				AA39D6DE2D4BD72C00A92D5F /* NavigationVC.m in Sources */,
+				AA62713F2D4C893A0082884C /* MoneyPad.m in Sources */,
+				AA28B12E2D40B1000017C8BF /* Colors.m in Sources */,
+				AAA434392D3D6C5B00BF9B35 /* MainVC.m in Sources */,
+				AAF13A1A2D50E37400EEB045 /* ExpenseEdit.m in Sources */,
+				AA35C6452D43E81700CFE881 /* Styles.m in Sources */,
+				AA39D6DB2D4BD1F400A92D5F /* Images.m in Sources */,
+				AA87AC3A2D4DDBE5004017EA /* IncomeListVC.m in Sources */,
+				AAE450A62D3FC7B300D854F2 /* WelcomeVC.m in Sources */,
+				AA35C6482D43F3B500CFE881 /* BottomNavigationBar.m in Sources */,
+				AAF34B342D44EE75001C8022 /* TransactionVC.m in Sources */,
+				AA90871C2D41297C001BEA97 /* RoundedButton.m in Sources */,
+				AAF34B2E2D44AE73001C8022 /* EmptyState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAA434292D3D6C5B00BF9B35 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAA434282D3D6C5B00BF9B35 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AAA4342B2D3D6C5B00BF9B35 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAA4342A2D3D6C5B00BF9B35 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAE450AC2D3FC9AC00D854F2 /* Welcome.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAE450AD2D3FC9AC00D854F2 /* Base */,
+			);
+			name = Welcome.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAA434202D3D6B7000BF9B35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6X9G3CYFJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					Sources,
+					Vendors,
+					"../out/money-manager-base/Sources",
+					"../out/money-manager-base/Vendors",
+				);
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "现金管家";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.doublegsoft.moneymanager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AAA434212D3D6B7000BF9B35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6X9G3CYFJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					Sources,
+					Vendors,
+					"../out/money-manager-base/Sources",
+					"../out/money-manager-base/Vendors",
+				);
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "现金管家";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.doublegsoft.moneymanager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AAA434222D3D6B7000BF9B35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AAA434232D3D6B7000BF9B35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAA434022D3D6B6D00BF9B35 /* Build configuration list for PBXProject "MoneyManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAA434222D3D6B7000BF9B35 /* Debug */,
+				AAA434232D3D6B7000BF9B35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAA4341F2D3D6B7000BF9B35 /* Build configuration list for PBXNativeTarget "moneymanager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAA434202D3D6B7000BF9B35 /* Debug */,
+				AAA434212D3D6B7000BF9B35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AA6664AA2D4B77ED003E8290 /* XCLocalSwiftPackageReference "Vendors/TOCropViewController" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendors/TOCropViewController;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA6664AB2D4B77ED003E8290 /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CropViewController;
+		};
+		AA6664AD2D4B77ED003E8290 /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TOCropViewController;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AAA433FF2D3D6B6D00BF9B35 /* Project object */;
+}
