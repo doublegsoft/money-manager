@@ -1,0 +1,4 @@
+[submodule "ios/Vendors/TOCropViewController"]
+path = ios/Vendors/TOCropViewController
+url = https://github.com/TimOliver/TOCropViewController.git
+
